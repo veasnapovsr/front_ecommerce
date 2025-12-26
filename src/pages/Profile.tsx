@@ -9,10 +9,20 @@ import clip4 from "../assets/clip-04.jpg";
 import profile from "../assets/profile.jpg";
 import profileg from "../assets/profileGirl.jpg";
 import { useState, useEffect, Fragment } from "react";
+
+interface User {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  age?: number;
+  phone?: string;
+  gender?: string;
+}
+
 function Profile() {
 
 
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState<User>({});
 
   useEffect(() => {
     const token = localStorage.getItem("token");
