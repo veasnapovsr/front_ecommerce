@@ -1,12 +1,4 @@
 node_modules
-.env
 .env.local
-.git
 *.log
 .DS_Store
-src
-public
-*.md
-tsconfig.json
-tsconfig.node.json
-vite.config.ts
